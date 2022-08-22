@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        body {
+            background-image: url("imagens/wallpaper001.jpg");
+        }
+        div.quadrado {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+            margin: 3px;
+            border-radius: 15px;
+        }
+
+        div.quadrado:nth-child(1) {
+            background-color: lightblue;
+        }
+
+        div.quadrado:nth-child(2) {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div.quadrado:nth-child(3) {
+            background-image: url("imagens/pattern003.png");
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+</body>
+</html>
